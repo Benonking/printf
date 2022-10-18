@@ -16,6 +16,7 @@ int print_char(va_list list)
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
+
 int print_string(va_list list)
 {
 	int i;
@@ -34,11 +35,19 @@ int print_string(va_list list)
  * @list: list of arguments
  * Return: Will return the amount of characters printed.
  */
+
 int print_percent(__attribute__((unused))va_list list)
 {
 	_write_char('%');
 	return (1);
 }
+
+/**
+ * print_integer - print an integer
+ * @list: list of all arguments
+ * Return: number printed
+ */
+
 int print_integer(va_list list)
 {
 	int num_length;
