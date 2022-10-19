@@ -18,6 +18,11 @@ int _printf(const char *format, ...)
 		{"i", print_integer},
 		{"b", print_binary},
 		{"u", unsigned_integer},
+		{"r", print_reversed},
+		{"R", rot13},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_heX},
 		{NULL, NULL}
 	};
 	va_list arg_list;
