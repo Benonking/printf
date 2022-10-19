@@ -12,6 +12,20 @@ typedef struct convert
 	int (*f)(va_list);
 } conver_t;
 
+/**
+ * struct flags contains flags to turn on
+ * @plus flag for the '+' character
+ * @space flag for the ' ' character
+ * @hash flag for the '#' character
+ */
+
+typedef struct flags
+{
+    int plus;
+    int space;
+    int hash;
+} flags_t;
+
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_char(va_list list);
